@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    position: relative;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;    
+}
+
+i {
+    color: rgb(229, 229, 0);
+}
+
+a:hover {
+    color: rgb(229, 229, 0);
+}
+
+#logo {
+    width: 3em;
+    padding: 2em 0;
+}
+
+#naslov h1{
+    width: 50vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    line-height: 3em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px groove rgb(255, 166, 0);
+    animation: floatFromBottom 1s ease;
+    padding-top: 2%;
+}
+
+@keyframes floatFromBottom {
+    0% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 40vw 40vw;
+    grid-template-rows: 50vh;
+    gap: 5vw;
+
+    padding: 8vh 5vw;
+}
+
+#container div {
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin: 1vh 1vw;
+}
+
+input {
+    margin: 1vh 1vw;
+    height: 2rem;
+    border-radius: 5px;
+}
+
+#odabir {
+    display: flex;
+    flex-direction: column;
+}
+
+.ui-menu {
+    width: 200px;
+}
+
+ul {
+    width: 100%;
+}
+
+table, th, td {
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+thead, #table-footer {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    margin: 5px 5px;
+}
+
+tr:nth-child(even) {
+    background-color: whitesmoke;
+}
+
+tfoot {
+    border-top: 2px darkgrey;
+}
+
+.footer {
+    width: 100vw;
+    background-image: url(../src/img/zaiskri-bg.jpg);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer h1 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-top: 0.8em;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-stretch: narrower;
+}
+
+#prvo {
+    color: white;
+}
+
+#drugo {
+    color: rgba(255, 0, 0, 0.774);
+}

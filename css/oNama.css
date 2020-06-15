@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header {
+    position: fixed;
+    width: 100vw;
+    display: inline-flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100vw;
+    list-style: none;
+    align-items: center;
+    padding-right: 1em;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    position: relative;
+}
+
+li.navRight > a {
+    color: sandybrown;
+    padding-right: 1em;
+}
+
+li.navRight > a:hover {
+    color: rgb(229, 229, 0);
+}
+
+.navRight {
+    animation: floatFromRight 1.75s ease-out;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;    
+}
+
+a > i {
+    color: rgb(255, 255, 0);
+}
+
+a:hover {
+    color: rgb(255, 255, 0);
+}
+
+.item {
+    flex-grow: 1;
+}
+
+#logo {
+    width: 3em;
+    padding: 2em 0;
+}
+
+@keyframes floatFromRight {
+    0% {
+        transform: translateX(2000px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+/* kraj headera */
+
+
+/* slika kampusa */
+
+#image {
+    height: 45vh;
+    width: 100%;
+    background-image: url(/src/img/kampus-iz-zraka-min-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: floatFromAbove 1s ease;
+    z-index: -1;
+}
+
+@keyframes floatFromAbove {
+    0% {
+        transform: translateY(-450px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#naseVrijednosti h1{
+    width: 50vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    line-height: 3em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px groove rgb(255, 166, 0);
+    animation: floatFromBottom 1s ease;
+}
+
+@keyframes floatFromBottom {
+    0% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#naseVrijednosti {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    color: darkred;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+#naseVrijednosti > .quote {
+    height: 10%;
+}
+
+#povijest > .quote {
+    height: 15%;
+}
+
+.card p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+#algebraGrupa > .quote {
+    height: 15%;
+}
+
+.quote {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+    background-color: rgb(243, 243, 243);
+    height: 35vh;
+}
+
+.quote > p {
+    margin: 1% 20vw;
+}
+
+#cards{
+    display: inline-flex;
+    margin: 2em 20vw;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-stretch: wider;
+}
+
+.card {
+    width: 400px;
+    height: 300px;
+    border: 2px solid rgb(207, 207, 207);
+    border-radius: 5px;
+    margin: 0 0.2vw;
+}
+
+h3 {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    margin: 10px;
+    line-height: 2em;
+    text-transform: uppercase;
+    text-shadow: .5px .5px black;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    font-stretch: wider;
+}
+
+.card > p {
+    margin: 10px;
+    text-align: justify;
+}
+
+#godina {
+    color: rgb(0, 132, 255);
+}
+
+.historyCards {
+    margin: 5vh 0;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 400px 400px 400px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#partneri {
+    margin: 5vh 0;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 320px 320px 320px 320px;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+#partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#partner > h3 {
+    font-size: 1em;
+}
+
+#partner img {
+    margin-top: 5%;
+    height: 35%;
+    width: auto;
+}
+
+.parallax {
+    background-image: url(src/img/kakoDoNas.jpg);
+    min-height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-color: rgba(246, 241, 241, 0.561);
+    background-blend-mode: color;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.kartice {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#livo, #desno {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 1%;
+    background-color: whitesmoke;
+}
+
+.kartice i {
+    color: rgb(0, 132, 255);
+}
+.kartice p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    margin: 2% 10%;
+}
+
+iframe {
+    width: 50vw;
+    margin-bottom: 5%;
+}
+
+.footer {
+    background-image: url(../src/img/zaiskri-bg.jpg);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer h1 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-top: 0.8em;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-stretch: narrower;
+}
+
+#prvo {
+    color: white;
+}
+
+#drugo {
+    color: rgba(255, 0, 0, 0.774);
+}
+
+@media (orientation: portrait){
+    ul {
+        text-align: center;
+        padding: 0 0;
+    }
+
+    .header {
+        justify-content: space-evenly;
+    }
+
+    li {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2%;
+    }
+
+    #logo {
+        padding: 0 0;
+    }
+}

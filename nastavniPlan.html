@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavni plan</title>
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link rel="stylesheet" href="css/nastavniPlan.css">
+</head>
+<body>
+
+    <div class="header">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img id="logo" src="/src/img/Algebra-logo.png" alt="logo">
+                </a>
+            </li>
+            <li>
+                <a href="index.html"><i class="fas fa-home"></i> Početna</a>
+            </li>
+            <li>
+                <a href="oNama.html"><i class="fas fa-comments"></i> O nama</a>
+            </li>
+            <li>
+                <a href="novosti.html"><i class="fas fa-comments"></i> Novosti</a>
+            </li>
+            <li>
+                <a href="nastavniPlan.html"><i class="fas fa-info-circle"></i> Nastavni plan</a>
+            </li>
+            <li>
+                <a href="#"><i class="fas fa-envelope"></i> Kontakt</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="naslov">
+        <h1>Nastavni plan</h1>
+    </div>
+    
+
+    <div id="container">
+        <div id="odabir">
+            <label for="input-kolegij">Naziv kolegija:</label>
+            <input type="text" name="" id="input-kolegij" 
+                placeholder="Započnite unos kolegija..." />
+        </div>
+        <div id="rezultat">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Kolegij</th>
+                        <th>ECTS</th>
+                        <th>Sati</th>
+                        <th>P</th>
+                        <th>V</th>
+                        <th>Tip</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="lista-odabranih"></tbody>
+                <tfoot id="table-footer">
+                    <tr>
+                        <td>Ukupno</td>
+                        <td id="ects-total"></td>
+                        <td id="sati-total"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <h1 id="prvo">BUDI IZVRSTAN U ONOM ŠTO VOLIŠ</h1>
+        <h1 id="drugo">ZAISKRI</h1>
+    </div>
+
+</body>
+<script src="js/jquery-3.5.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="https://kit.fontawesome.com/52bb6add1b.js" crossorigin="anonymous"></script>
+<script src="js/nastavniPlan.js"></script>
+</html>

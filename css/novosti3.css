@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;    
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    position: relative;
+}
+
+li a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;    
+}
+
+i {
+    color: rgb(229, 229, 0);
+}
+
+a:hover {
+    color: rgb(229, 229, 0);
+}
+
+#logo {
+    width: 3em;
+    padding: 2em 0;
+}
+
+#image {
+    height: 35vh;
+    width: 100%;
+    background-image: url(../src/img/novost3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    animation: floatFromAbove 1s ease;
+    z-index: -1;
+}
+
+@keyframes floatFromAbove {
+    0% {
+        transform: translateY(-450px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h1{
+    width: 50vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    line-height: 3em;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px groove rgb(255, 166, 0);
+    animation: floatFromBottom 1s ease;
+}
+
+@keyframes floatFromBottom {
+    0% {
+        transform: translateY(25px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#tekst {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 1.3em;
+    line-height: 2rem;
+    width: 60vw;
+    padding: 5vh 0;
+}

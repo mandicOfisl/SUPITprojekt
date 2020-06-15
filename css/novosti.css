@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    display: inline-flex;
+    justify-content: flex-start;
+    background-color: black;
+}
+
+ul {
+    background-color: black;
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+    list-style: none;
+    align-items: center;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 2em;
+    position: relative;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    font-size: 0.8em;
+    text-decoration: none;
+    color: white;    
+}
+
+i {
+    color: rgb(229, 229, 0);
+}
+
+a:hover {
+    color: rgb(229, 229, 0);
+}
+
+#logo {
+    width: 3em;
+    padding: 2em 0;
+}
+
+
+
+
+
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 70vh;
+}
+
+.kruzi {
+    display: inline-flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+
+#krug {
+    width: 14vw;
+    height: 14vw;
+    border: 20px solid rgb(236, 236, 236);
+    margin: 2%;
+    display: flex;
+    box-shadow: 2px 1px rgba(0, 0, 0, 0.253);
+   
+    border-radius: 100%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+
+#content h1{
+    width: 50vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-stretch: narrower;
+    font-weight: bold;
+    line-height: 3em;
+    text-align: center;
+    border-bottom: 2px groove rgb(255, 166, 0);
+    
+}
+
+p {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-stretch: narrower;
+    font-size: 0.8vw;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-align: center;
+
+    padding: 0 5%;
+}
+
+#datum {
+    color: yellow;
+}
+
+#krug:nth-child(1) {
+    background-image: url(../src/img/novost1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#krug:nth-child(2) {
+    background-image: url(../src/img/novost2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#krug:nth-child(3) {
+    background-image: url(../src/img/novost3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+
+.footer {
+    background-image: url(../src/img/zaiskri-bg.jpg);
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.footer h1 {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    margin-top: 0.8em;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-stretch: narrower;
+}
+
+#prvo {
+    color: white;
+}
+
+#drugo {
+    color: rgba(255, 0, 0, 0.774);
+}
