@@ -1,31 +1,34 @@
 <script src="https://kit.fontawesome.com/52bb6add1b.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="css/kontakt.css">
+<script src="js/kontakt.js"></script>
 
-<div id="modalKontakt">
-    <form action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="POST" id="submit">
-        <div id="modalHeader">
-            <h1><i class="fas fa-envelope"></i>Kontaktirajte nas</h1>
-        </div>
-        <hr>
-        <div id="formInput">
-            <label for="fullName">Puno ime:</label>
-            <input id="fullNameInput" name="punoIme" type="text" autocomplete="off">
-            <label for="email">E-mail:</label>
-            <input id="emailInput" name="email" type="text" autocomplete="off">
-            <label>Važnost poruke:</label>
-            <select name="vaznostPoruke" id="vaznostPoruke">
-                <option value="visoka">Visoka</option>
-                <option value="niska">Niska</option>
-            </select>
-            <label for="vasaPoruka">Vaša poruka:</label>
-            <textarea id="poruka" name="textPoruka" ></textarea>
-            <label for="newsletterCheck">Primaj newsletter:
-                <input type="checkbox" name="newsletter" id="newsletterCheck">
-            </label>
-        </div>
-        <div id="buttons">
-            <button id="posalji">Pošalji</button>
-            <button id="odustani">Odustani</button>
-        </div>
-    </form>
+<div id="modalContainer">
+    <div id="modalKontakt">
+        <form id="form" action="http://www.fulek.com/VUA/SUPIT/ContactUs" method="POST">
+            <div id="modalHeader">
+                <h1 style="margin: 10px;"><i class="fas fa-envelope"></i> Kontaktirajte nas</h1>
+            </div>
+            <hr>
+            <div id="formInput">
+                <label for="fullName">Puno ime:</label>
+                <input id="fullNameInput" name="name" type="text" autocomplete="off">
+                <label for="email">E-mail:</label>
+                <input id="emailInput" name="email" type="text" autocomplete="off">
+                <label>Važnost poruke:</label>
+                <select name="importance" id="vaznostPoruke">
+                    <option value="visoka">Visoka</option>
+                    <option value="niska">Niska</option>
+                </select>
+                <label for="vasaPoruka">Vaša poruka:</label>
+                <textarea id="poruka" name="message" ></textarea>
+                <label for="newsletterCheck">Primaj newsletter:
+                    <input type="checkbox" name="newsletter" id="newsletterCheck">
+                </label>
+            </div>
+            <div id="buttons">
+                <button type="submit" id="posalji">Pošalji</button>
+                <button type="button" onclick="hideKontakt()" id="odustani">Odustani</button>
+            </div>
+        </form>
+    </div>
 </div>

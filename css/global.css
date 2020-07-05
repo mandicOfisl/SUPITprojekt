@@ -1,0 +1,6 @@
+#kontakt {
+    position: absolute;
+    float: left;
+    z-index: 1001;
+    background: rgba(0, 0, 0, 0.8);
+}

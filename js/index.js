@@ -48,8 +48,4 @@ function onLoad() {
             document.getElementById("prvo").style["borderRightStyle"] = "hidden";
         }
     }
-    $("#kontaktLink").click(function(){
-        console.log("ksjhdfljsdlf");
-        $("#kontakt").load("kontakt.html");
-    });
 }
